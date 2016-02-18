@@ -1703,3 +1703,10 @@ article:hover .overlay {
 .column-full div {
   margin 10px 0px 10px 0px;
 }
+
+.blog-cover {
+  overflow: visible;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

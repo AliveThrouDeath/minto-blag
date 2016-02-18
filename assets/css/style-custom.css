@@ -193,7 +193,6 @@ body {
     font-size: 14px;
     line-height: 1.42857;
     color: #333;
-    background-color: #fff;
 }
 button, input, select, textarea {
     font-family: inherit;
@@ -307,7 +306,7 @@ hr {
     font-size: 12px;
 }
 p {
-    margin: 0 0 10px;
+    margin: 10px 0 10px 0;
 }
 .lead {
     margin-bottom: 20px;
@@ -1325,14 +1324,14 @@ span.underline {
 }
 .content h1 {
     color: #4c4d57;
-    font-size: 150px;
+    font-size: 100px;
     letter-spacing: 2px;
     font-weight: 900;
     display: inline;
     font-family: Lato, sans-serif;
 }
 .content h2 {
-    font-size: 100px;
+    font-size: 75px;
     color: #4c4d57;
     font-weight: 900;
     margin: 140px 0 0;
@@ -1349,7 +1348,7 @@ span.underline {
     font-size: 31px;
     color: #4c4d57;
     line-height: 60px;
-    margin: 0;
+    margin: 10px 0 10px 0;
 }
 .post-list {
   margin: 55px 0;
@@ -1559,7 +1558,7 @@ article:hover .overlay {
     padding-left: 25px;
 }
 .single div div > ol, .single div div > ul{
-	margin: 0 0 35px 0;
+	margin: 0px 0 35px 0;
 }
 .single ol {
     padding-left: 35px;
@@ -1586,11 +1585,14 @@ article:hover .overlay {
 .single input:focus{ outline: none; }
 .comments{ margin: 70px 0 90px 0; }
 .fixed-logo {
+    border-radius: 70px;
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
-    background: #4c4d57;
+    background: rgba(#4c4d57, 0.6);
     z-index: 1;
+    margin: 10px 10px 10px 10px;
 }
 .fixed-logo a:hover{ border-bottom: none; }
 .fixed-logo img {
@@ -1605,12 +1607,12 @@ article:hover .overlay {
 .fixed-logo a .arrow {
     opacity: 0;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     transition: opacity .6s;
 }
 .fixed-logo a:hover .arrow {
-    opacity: 1;
+    opacity: 0.9;
 }
 @media (max-width:480px) {
     .work article {
@@ -1689,7 +1691,15 @@ article:hover .overlay {
 }
 .rwd-menu{ position: fixed; top: 0; left: 0; background: #4c4d57; width: 100%; height: 70px; z-index: 1; }
 .rwd-menu img{ height: 70px; }
-.rwd-menu a.arrow img{ height: 50px; margin-left: 10px; }
+.rwd-menu a.arrow img{ height: 50px; margin-left: 10px;}
 .rwd-menu a.lgo img{ }
 }
 .hidden{ display: none; }
+
+.full-img {
+  max-width: 100%;
+}
+
+.column-full div {
+  margin 10px 0px 10px 0px;
+}
